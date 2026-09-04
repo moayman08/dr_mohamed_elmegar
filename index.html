@@ -1,259 +1,482 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Dr. Mohamed Abdelfatah Elmegar — General & Endocrine Surgery. Advanced surgical care with a patient-first approach." />
-  <title>Dr. Mohamed Abdelfatah Elmegar | General & Endocrine Surgery</title>
+  <meta name="description" content="د. محمد عبد الفتاح المعجار — استشاري الجراحة العامة وجراحة الغدد الصماء والفتق والمناظير." />
+  <title>د. محمد عبد الفتاح المعجار | استشاري الجراحة العامة والغدد الصماء</title>
+  
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- Header & Navigation -->
   <header class="site-header" id="top">
     <div class="container nav-wrap">
-      <a class="brand" href="#home" aria-label="Dr. Mohamed Abdelfatah Elmegar home">
-        <img src="logo.png" alt="Dr. Mohamed Abdelfatah Elmegar logo" />
-        <span>
-          <strong>Dr. Mohamed Abdelfatah Elmegar</strong>
-          <small>General & Endocrine Surgery</small>
-        </span>
+      <a class="brand" href="#home" aria-label="الرئيسية - د. محمد عبد الفتاح المعجار">
+        <img src="photo_6_2026-09-04_21-22-17.jpg" alt="شعار د. محمد عبد الفتاح المعجار" class="brand-logo" />
+        <div class="brand-text">
+          <strong>د. محمد عبد الفتاح المعجار</strong>
+          <small>استشاري الجراحة العامة والغدد الصماء</small>
+        </div>
       </a>
 
-      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
+      <button class="menu-toggle" aria-label="فتح القائمة" aria-expanded="false" id="menuToggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
       </button>
 
-      <nav class="nav" aria-label="Main navigation">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#clinics">Clinics</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact" class="nav-cta">Book Consultation</a>
+      <nav class="nav" id="mainNav" aria-label="التنقل الرئيسي">
+        <a href="#home" class="nav-link active">الرئيسية</a>
+        <a href="#about" class="nav-link">عن الطبيب</a>
+        <a href="#services" class="nav-link">الخدمات</a>
+        <a href="#clinics" class="nav-link">العيادات</a>
+        <a href="#gallery" class="nav-link">معرض الصور</a>
+        <a href="#contact" class="btn btn-nav-cta">حجز استشارة</a>
       </nav>
     </div>
   </header>
 
   <main>
+    <!-- Hero Section -->
     <section class="hero" id="home">
-      <div class="hero-glow glow-one"></div>
-      <div class="hero-glow glow-two"></div>
+      <div class="hero-bg-glow glow-1"></div>
+      <div class="hero-bg-glow glow-2"></div>
+      
       <div class="container hero-grid">
         <div class="hero-copy reveal">
-          <div class="eyebrow"><span></span> CONSULTANT SURGEON</div>
-          <h1>Expert care.<br><em>Confident</em> decisions.</h1>
-          <p class="hero-lead">
-            Specialized surgical care in General, Endocrine and Hernia Surgery —
-            combining experience, precision and modern techniques with a patient-first approach.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#clinics">View Clinic Schedule <span>→</span></a>
-            <a class="btn btn-ghost" href="#about">Meet the Doctor</a>
+          <div class="eyebrow">
+            <span class="pulse-dot"></span>
+            <span>رعاية جراحية متخصصة ومتقدمة</span>
           </div>
-          <div class="trust-row">
-            <div><b>01</b><span>Patient-first care</span></div>
-            <div><b>02</b><span>Modern techniques</span></div>
-            <div><b>03</b><span>Clear guidance</span></div>
+          <h1>خبرة جراحية تمنحك <br><span class="highlight">الثقة والأمان.</span></h1>
+          <p class="hero-lead">
+            نقدم أفضل حلول الجراحة العامة وجراحات الغدد الصماء والفتق والمناظير بأحدث التقنيات الطبية المعاصرة ومعايير السلامة العالمية.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#clinics">
+              <span>مواعيد العيادات والحجز</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+            </a>
+            <a class="btn btn-outline" href="https://wa.me/201007450402" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+              <span>تواصل واتساب مباشر</span>
+            </a>
+          </div>
+
+          <div class="trust-pills">
+            <div class="trust-pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>دقة تشخيصية عالية</span>
+            </div>
+            <div class="trust-pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>تقنيات مناظير حديثة</span>
+            </div>
+            <div class="trust-pill">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>متابعة دقيقة بعد العملية</span>
+            </div>
           </div>
         </div>
 
         <div class="hero-visual reveal">
-          <div class="photo-frame">
-            <img src="doctor-scrubs.jpg" alt="Dr. Mohamed Abdelfatah Elmegar in surgical scrubs" />
-          </div>
-          <div class="floating-card">
-            <div class="mini-icon">✦</div>
-            <div>
-              <strong>General & Endocrine Surgery</strong>
-              <span>Advanced surgical solutions</span>
+          <div class="photo-card-wrapper">
+            <div class="photo-frame">
+              <img src="photo_4_2026-09-04_21-22-17.jpg" alt="د. محمد عبد الفتاح المعجار بملابس العمليات" />
+            </div>
+            <div class="glass-card floating-card">
+              <div class="card-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+              </div>
+              <div>
+                <strong>جراحة عامة ومناظير</strong>
+                <small>أحدث معايير الأمان والجودة</small>
+              </div>
+            </div>
+            <div class="experience-badge">
+              <strong>مدرس واستشاري</strong>
+              <span>الجراحة العامة</span>
             </div>
           </div>
-          <div class="seal">
-            <span>CARE</span>
-            <small>PRECISION</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-bar">
+      <div class="container stats-grid">
+        <div class="stat-item">
+          <div class="stat-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <div>
+            <h3>خبرة أكاديمية وطبية</h3>
+            <p>مدرس واستشاري الجراحة العامة</p>
+          </div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <div>
+            <h3>جراحة الغدد الصماء</h3>
+            <p>الدرقية والغدد المختلفة بدقة عالية</p>
+          </div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div>
+            <h3>جراحات المناظير</h3>
+            <p>تقنيات متقدمة وسريعة التعافي</p>
+          </div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div>
+            <h3>٣ مقرات للعيادة</h3>
+            <p>المنصورة · نبروه · تيرة</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="stats">
-      <div class="container stats-grid">
-        <div><strong>Specialized</strong><span>General Surgery</span></div>
-        <div><strong>Focused</strong><span>Endocrine Surgery</span></div>
-        <div><strong>Advanced</strong><span>Hernia Surgery</span></div>
-        <div><strong>3</strong><span>Clinic Locations</span></div>
-      </div>
-    </section>
-
+    <!-- About Section -->
     <section class="section about" id="about">
       <div class="container split-grid">
-        <div class="about-photo reveal">
-          <img src="doctor-formal.jpg" alt="Dr. Mohamed Abdelfatah Elmegar" />
-          <div class="image-label">DR. MOHAMED ABDELFATAH ELMEGAR</div>
+        <div class="about-visual reveal">
+          <div class="about-image-card">
+            <img src="photo_5_2026-09-04_21-22-17.jpg" alt="د. محمد عبد الفتاح المعجار في عيادته" />
+            <div class="image-overlay-badge">
+              <span>د. محمد عبد الفتاح المعجار</span>
+            </div>
+          </div>
         </div>
         <div class="section-copy reveal">
-          <div class="eyebrow"><span></span> ABOUT THE DOCTOR</div>
-          <h2>Precision in surgery.<br><em>Confidence</em> in care.</h2>
+          <div class="eyebrow">
+            <span class="bar-line"></span>
+            <span>نبذة عن الطبيب</span>
+          </div>
+          <h2>دقة جراحية متناهية..<br><span class="highlight">ورعاية شاملة تهتم بالمريض.</span></h2>
           <p>
-            Dr. Mohamed Abdelfatah Elmegar is a surgeon and medical educator focused on
-            General, Endocrine and Hernia Surgery. His approach is built around accurate
-            diagnosis, careful planning and a clear conversation with every patient.
+            د. محمد عبد الفتاح المعجار — مدرس واستشاري الجراحة العامة وجراحة الغدد الصماء والمناظير. يجمع بين الخبرة الأكاديمية والعملية لتوفير أعلى مستويات الرعاية الجراحية، بدءاً من التشخيص الدقيق وحتى التماثل التام للشفاء.
           </p>
-          <div class="feature-list">
-            <div><span>✓</span><p><b>Personalized assessment</b><small>Every treatment plan starts with understanding the patient.</small></p></div>
-            <div><span>✓</span><p><b>Modern surgical approach</b><small>Focused on safe, precise and effective techniques.</small></p></div>
-            <div><span>✓</span><p><b>Complete follow-up</b><small>Guidance before, during and after the procedure.</small></p></div>
+          <div class="feature-cards">
+            <div class="f-card">
+              <div class="f-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div>
+                <h4>خطة علاجية فردية لكل حالة</h4>
+                <p>تقييم دقيق وشامل لكافة الفحوصات والتحاليل قبل تحديد الإجراء الجراحي المناسب.</p>
+              </div>
+            </div>
+            <div class="f-card">
+              <div class="f-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div>
+                <h4>تقنيات التدخل الدقيق</h4>
+                <p>استخدام المناظير وأحدث الأساليب وتقليل فترة الإقامة بالمستشفى لسرعة العودة للحياة الطبيعية.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- Services Section -->
     <section class="section services" id="services">
       <div class="container">
-        <div class="section-heading reveal">
-          <div class="eyebrow"><span></span> SPECIALIZED SERVICES</div>
-          <h2>Care designed around <em>your needs.</em></h2>
-          <p>Selected surgical services presented with clarity, safety and a modern patient experience.</p>
+        <div class="section-heading text-center reveal">
+          <div class="eyebrow center">
+            <span class="bar-line"></span>
+            <span>التخصصات والخدمات الجراحية</span>
+            <span class="bar-line"></span>
+          </div>
+          <h2>رعاية جراحية متكاملة <span class="highlight">بأحدث التقنيات</span></h2>
+          <p>نعمل بأعلى المعايير الطبية لتقديم حلول جراحية آمنة وفعالة.</p>
         </div>
 
         <div class="service-grid">
           <article class="service-card reveal">
-            <div class="service-no">01</div><div class="service-icon">◒</div>
-            <h3>General Surgery</h3>
-            <p>Evaluation and surgical management of common general surgical conditions.</p>
-            <a href="#contact">Ask about treatment →</a>
+            <div class="card-head">
+              <span class="ser-number">٠١</span>
+              <div class="ser-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </div>
+            </div>
+            <h3>الجراحة العامة</h3>
+            <p>تشخيص وعلاج العمليات الجراحية العامة وجراحات الجهاز الهضمي بأعلى معايير الدقة والكفاءة.</p>
+            <a href="#contact" class="card-link">احجز استشارة الان ←</a>
           </article>
+
           <article class="service-card featured reveal">
-            <div class="service-no">02</div><div class="service-icon">⌁</div>
-            <h3>Hernia Surgery</h3>
-            <p>Modern approaches for abdominal and groin hernias, with a focus on recovery.</p>
-            <a href="#contact">Ask about treatment →</a>
+            <div class="card-head">
+              <span class="ser-number">٠٢</span>
+              <div class="ser-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+            </div>
+            <h3>جراحة الغدد الصماء</h3>
+            <p>استئصال وعلاج أمراض الغدة الدرقية والجارات درقية والغدد الصماء بأحدث الطرق الآمنة.</p>
+            <a href="#contact" class="card-link">احجز استشارة الان ←</a>
           </article>
+
           <article class="service-card reveal">
-            <div class="service-no">03</div><div class="service-icon">◈</div>
-            <h3>Endocrine Surgery</h3>
-            <p>Surgical care for thyroid and other endocrine gland conditions.</p>
-            <a href="#contact">Ask about treatment →</a>
+            <div class="card-head">
+              <span class="ser-number">٠٣</span>
+              <div class="ser-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/></svg>
+              </div>
+            </div>
+            <h3>جراحات الفتق والمناظير</h3>
+            <p>إصلاح كافة أنواع الفتق (الإربي، الجداري، السري) بالمنظار واستخدام أحدث الشبكات الجراحية.</p>
+            <a href="#contact" class="card-link">احجز استشارة الان ←</a>
           </article>
+
           <article class="service-card reveal">
-            <div class="service-no">04</div><div class="service-icon">+</div>
-            <h3>Consultation & Follow-up</h3>
-            <p>Clear consultations, treatment planning and structured post-operative follow-up.</p>
-            <a href="#contact">Book a consultation →</a>
+            <div class="card-head">
+              <span class="ser-number">٠٤</span>
+              <div class="ser-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              </div>
+            </div>
+            <h3>الاستشارات والمتابعة</h3>
+            <p>استشارات جراحية دقيقة، تقييم الفحوصات الطبية والمتابعة المستمرة قبل وبعد العمليات.</p>
+            <a href="#contact" class="card-link">احجز استشارة الان ←</a>
           </article>
         </div>
       </div>
     </section>
 
+    <!-- Clinics Section -->
     <section class="section clinics" id="clinics">
       <div class="container">
-        <div class="section-heading split-heading reveal">
-          <div>
-            <div class="eyebrow"><span></span> CLINIC LOCATIONS</div>
-            <h2>Choose the location<br><em>that suits you.</em></h2>
+        <div class="section-heading text-center reveal">
+          <div class="eyebrow center">
+            <span class="bar-line"></span>
+            <span>مواقع وعيادات الطبيب</span>
+            <span class="bar-line"></span>
           </div>
-          <p>Clinic hours are shown below. Please confirm availability before visiting.</p>
+          <h2>فروع العيادة <span class="highlight">ومواعيد الحجز</span></h2>
+          <p>اختر المقر الأنسب لك وتواصل معنا لحجز الموعد المسبق.</p>
         </div>
 
         <div class="clinic-grid">
+          <!-- عيادة نبروه -->
           <article class="clinic-card reveal">
-            <div class="clinic-top"><span class="pin">⌖</span><span class="city">Nabrouh</span></div>
-            <div class="clinic-line"><span>Days</span><strong>Saturday · Tuesday · Wednesday</strong></div>
-            <div class="clinic-line"><span>Time</span><strong>8:00 PM – 10:30 PM</strong></div>
-            <div class="clinic-line"><span>Location</span><strong>Clinic — Nabrouh</strong></div>
-            <button class="schedule-btn" data-location="Nabrouh">Book / Ask</button>
+            <div class="clinic-header">
+              <div class="pin-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <h3>فرع نبروه</h3>
+            </div>
+            <div class="clinic-details">
+              <div class="detail-row">
+                <span class="label">الأيام:</span>
+                <span class="val">السبت · الثلاثاء · الأربعاء</span>
+              </div>
+              <div class="detail-row">
+                <span class="label">الموعد:</span>
+                <span class="val highlight-time">8:00 مساءً – 10:30 مساءً</span>
+              </div>
+              <div class="detail-row">
+                <span class="label">العنوان:</span>
+                <span class="val">عيادة نبروه</span>
+              </div>
+            </div>
+            <button class="btn btn-clinic schedule-btn" data-location="نبروه">
+              <span>حجز موعد في نبروه</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
           </article>
 
+          <!-- عيادة المنصورة -->
           <article class="clinic-card featured reveal">
-            <div class="clinic-top"><span class="pin">⌖</span><span class="city">Mansoura</span><span class="tag">POPULAR</span></div>
-            <div class="clinic-line"><span>Days</span><strong>By appointment</strong></div>
-            <div class="clinic-line"><span>Time</span><strong>8:30 PM – 10:30 PM</strong></div>
-            <div class="clinic-line"><span>Location</span><strong>El Eslah El Tebby Center</strong></div>
-            <button class="schedule-btn" data-location="Mansoura">Book / Ask</button>
+            <div class="popular-tag">الفرع الرئيسي</div>
+            <div class="clinic-header">
+              <div class="pin-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <h3>فرع المنصورة</h3>
+            </div>
+            <div class="clinic-details">
+              <div class="detail-row">
+                <span class="label">الأيام:</span>
+                <span class="val">بأسبقية الحجز المسبق</span>
+              </div>
+              <div class="detail-row">
+                <span class="label">الموعد:</span>
+                <span class="val highlight-time">8:30 مساءً – 10:30 مساءً</span>
+              </div>
+              <div class="detail-row">
+                <span class="label">العنوان:</span>
+                <span class="val">مجمع الإصلاح الطبي بتوريل</span>
+              </div>
+            </div>
+            <button class="btn btn-clinic featured-btn schedule-btn" data-location="المنصورة - مجمع الإصلاح الطبي">
+              <span>حجز موعد في المنصورة</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
           </article>
 
+          <!-- عيادة تيرة -->
           <article class="clinic-card reveal">
-            <div class="clinic-top"><span class="pin">⌖</span><span class="city">Terah</span></div>
-            <div class="clinic-line"><span>Days</span><strong>Wednesday</strong></div>
-            <div class="clinic-line"><span>Time</span><strong>5:00 PM – 7:00 PM</strong></div>
-            <div class="clinic-line"><span>Location</span><strong>Clinic — Terah</strong></div>
-            <button class="schedule-btn" data-location="Terah">Book / Ask</button>
+            <div class="clinic-header">
+              <div class="pin-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <h3>فرع تيرة</h3>
+            </div>
+            <div class="clinic-details">
+              <div class="detail-row">
+                <span class="label">الأيام:</span>
+                <span class="val">الأربعاء</span>
+              </div>
+              <div class="detail-row">
+                <span class="label">الموعد:</span>
+                <span class="val highlight-time">5:00 عصراً – 7:00 مساءً</span>
+              </div>
+              <div class="detail-row">
+                <span class="label">العنوان:</span>
+                <span class="val">عيادة طيرة</span>
+              </div>
+            </div>
+            <button class="btn btn-clinic schedule-btn" data-location="تيرة">
+              <span>حجز موعد في تيرة</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
           </article>
         </div>
       </div>
     </section>
 
+    <!-- Gallery Section (المعدل بأسماء الكلاسات المخصصة لكل صورة) -->
     <section class="section gallery" id="gallery">
       <div class="container">
-        <div class="section-heading reveal">
-          <div class="eyebrow"><span></span> VISUAL PROFILE</div>
-          <h2>A closer look at the <em>doctor & brand.</em></h2>
+        <div class="section-heading text-center reveal">
+          <div class="eyebrow center">
+            <span class="bar-line"></span>
+            <span>معرض الصور والعيادة</span>
+            <span class="bar-line"></span>
+          </div>
+          <h2>معرض الصور <span class="highlight">والنشاط الطبي</span></h2>
         </div>
+
         <div class="gallery-grid">
-          <button class="gallery-item tall reveal" data-full="doctor-scrubs2.jpg">
-            <img src="doctor-scrubs2.jpg" alt="Doctor in operating room" />
-            <span>In the operating room ↗</span>
-          </button>
-          <button class="gallery-item reveal" data-full="doctor-formal.jpg">
-            <img src="doctor-formal.jpg" alt="Professional portrait" />
-            <span>Professional profile ↗</span>
-          </button>
-          <button class="gallery-item reveal" data-full="promo-1.jpg">
-            <img src="promo-1.jpg" alt="Clinic schedule design" />
-            <span>Clinic information ↗</span>
-          </button>
-          <button class="gallery-item reveal" data-full="promo-2.jpg">
-            <img src="promo-2.jpg" alt="Hernia surgery information design" />
-            <span>Surgical services ↗</span>
-          </button>
+          <!-- 1. صورة الدكتور (مكتف إيديه) - photo-1 -->
+          <div class="gallery-item photo-1 reveal" data-full="photo_1_2026-09-04_21-22-17.jpg">
+            <img src="photo_1_2026-09-04_21-22-17.jpg" alt="تجهيزات ورعاية جراحية" />
+            <div class="gallery-overlay">
+              <span>تجهيزات ورعاية جراحية</span>
+            </div>
+          </div>
+
+          <!-- 2. بنر المواعيد والجدول - photo-banner -->
+          <div class="gallery-item photo-banner reveal" data-full="photo_7_2026-09-04_21-21-39.jpg">
+            <img src="photo_7_2026-09-04_21-21-39.jpg" alt="جدول المواعيد والعيادات" />
+            <div class="gallery-overlay">
+              <span>بنر مواعيد العيادات</span>
+            </div>
+          </div>
+
+          <!-- 3. صورة الدكتور (بالبدلة) - photo-3 -->
+          <div class="gallery-item photo-3 reveal" data-full="photo_3_2026-09-04_21-21-39.jpg">
+            <img src="photo_3_2026-09-04_21-21-39.jpg" alt="د. محمد عبد الفتاح المعجار" />
+            <div class="gallery-overlay">
+              <span>د. محمد عبد الفتاح المعجار</span>
+            </div>
+          </div>
+
+          <!-- 4. صورة الدكتور (السكراب البني) - photo-4 -->
+          <div class="gallery-item photo-4 reveal" data-full="photo_2_2026-09-04_21-22-17.jpg">
+            <img src="photo_2_2026-09-04_21-22-17.jpg" alt="فريق الجراحة والتجهيزات" />
+            <div class="gallery-overlay">
+              <span>فريق الجراحة والتجهيزات</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- Contact CTA Section -->
     <section class="cta-section" id="contact">
       <div class="container cta-inner reveal">
-        <div>
-          <div class="eyebrow light"><span></span> READY TO TALK?</div>
-          <h2>Take the next step<br><em>with confidence.</em></h2>
-          <p>Contact the clinic through WhatsApp or Facebook to ask about appointments and available times.</p>
+        <div class="cta-text">
+          <div class="eyebrow light">
+            <span class="bar-line"></span>
+            <span>تواصل مباشر وتأكيد الحجز</span>
+          </div>
+          <h2>هل لديك استفسار جراحي؟<br><span class="highlight-light">احجز استشارتك الآن بسهولة.</span></h2>
+          <p>يمكنك التواصل المباشر مع العيادة عن طريق الهاتف أو الواتساب أو الفيسبوك.</p>
         </div>
-        <div class="cta-actions">
-          <a class="social-btn whatsapp" id="whatsappLink" href="wa.me/+201007450402" target="_blank" rel="noopener" aria-label="Contact on WhatsApp">
-            <span class="wa-icon">◔</span> WhatsApp
+        
+        <div class="cta-buttons">
+          <a class="btn-social btn-wa" id="whatsappLink" href="https://wa.me/201007450402" target="_blank" rel="noopener">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+            <span>واتساب العيادة</span>
           </a>
-          <a class="social-btn facebook" id="facebookLink" href="https://www.facebook.com/share/14nyyZvFy2J/" target="_blank" rel="noopener" aria-label="Open Facebook page">
-            <span class="fb-icon">f</span> Facebook
+          <a class="btn-social btn-call" href="tel:01007450402">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <span>01007450402</span>
+          </a>
+          <a class="btn-social btn-fb" id="facebookLink" href="https://www.facebook.com/share/1BpECw1F2f/" target="_blank" rel="noopener">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            <span>فيسبوك</span>
           </a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
+  <!-- Footer -->
+  <footer class="site-footer">
     <div class="container footer-grid">
       <div class="footer-brand">
-        <img src="logo.png" alt="Doctor logo" />
-        <div><strong>Dr. Mohamed Abdelfatah Elmegar</strong><span>General & Endocrine Surgery</span></div>
+        <img src="photo_6_2026-09-04_21-22-17.jpg" alt="شعار د. محمد المعجار" />
+        <div>
+          <strong>د. محمد عبد الفتاح المعجار</strong>
+          <span>مدرس واستشاري الجراحة العامة وغدد صماء ومناظير</span>
+        </div>
       </div>
-      <p>© <span id="year"></span> Dr. Mohamed Abdelfatah Elmegar. All rights reserved.</p>
+      <p class="copyright">جميع الحقوق محفوظة © <span id="year"></span> د. محمد عبد الفتاح المعجار</p>
     </div>
   </footer>
 
+  <!-- Modal Contact -->
   <div class="modal" id="contactModal" aria-hidden="true">
     <div class="modal-backdrop"></div>
-    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-      <button class="modal-close" aria-label="Close">×</button>
-      <div class="eyebrow"><span></span> APPOINTMENT</div>
-      <h3 id="modalTitle">Contact the clinic</h3>
-      <p id="modalText">Send a WhatsApp message and mention your preferred clinic.</p>
-      <a class="btn btn-primary modal-wa" id="modalWhatsapp" href="#" target="_blank" rel="noopener">Open WhatsApp →</a>
+    <div class="modal-box">
+      <button class="modal-close" aria-label="إغلاق">&times;</button>
+      <div class="eyebrow">
+        <span class="pulse-dot"></span>
+        <span>حجز موعد عيادة</span>
+      </div>
+      <h3 id="modalTitle">تأكيد الموعد عبر الواتساب</h3>
+      <p id="modalText">سيتم توجيهك لمحادثة العيادة على الواتساب مع كتابة الفرع المحدد تلقائياً.</p>
+      <a class="btn btn-primary modal-wa-btn" id="modalWhatsapp" href="#" target="_blank" rel="noopener">
+        <span>الانتقال إلى الواتساب الآن</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+      </a>
     </div>
   </div>
 
+  <!-- Lightbox Gallery -->
   <div class="lightbox" id="lightbox" aria-hidden="true">
-    <button class="lightbox-close" aria-label="Close image">×</button>
+    <button class="lightbox-close" aria-label="إغلاق الصورة">&times;</button>
     <img id="lightboxImg" src="" alt="" />
   </div>
 
