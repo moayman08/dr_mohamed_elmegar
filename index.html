@@ -1,485 +1,1473 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="د. محمد عبد الفتاح المعجار — استشاري الجراحة العامة وجراحة الغدد الصماء والفتق والمناظير." />
-  <title>د. محمد عبد الفتاح المعجار | استشاري الجراحة العامة والغدد الصماء</title>
-  
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="style.css" />
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+  <title>
+    د. محمد عبد الفتاح المعجار | استشاري الجراحة العامة والمناظير
+  </title>
+
+  <meta name="description"
+        content="الموقع الرسمي للدكتور محمد عبد الفتاح المعجار - مدرس واستشاري الجراحة العامة والغدد الصماء والمناظير بكلية الطب - جامعة المنصورة.">
+
+  <!-- Google Font -->
+  <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+  <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap"
+        rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet"
+        href="style.css">
+
 </head>
+
+
 <body>
 
-  <!-- Header & Navigation -->
-  <header class="site-header" id="top">
-    <div class="container nav-wrap">
-      <a class="brand" href="#home" aria-label="الرئيسية - د. محمد عبد الفتاح المعجار">
-        <img src="photo_6_2026-09-04_21-22-17.jpg" alt="شعار د. محمد عبد الفتاح المعجار" class="brand-logo" />
-        <div class="brand-text">
-          <strong>د. محمد عبد الفتاح المعجار</strong>
-          <small>استشاري الجراحة العامة والغدد الصماء</small>
-        </div>
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<nav class="navbar" id="navbar">
+
+  <div class="container nav-container">
+
+    <a href="#hero" class="nav-logo">
+
+      <div class="logo-icon">
+
+        <img src="logo.jpg"
+             alt="شعار د. محمد عبد الفتاح المعجار">
+
+      </div>
+
+
+      <div class="logo-text">
+
+        <span class="doctor-name">
+          د. محمد عبد الفتاح المعجار
+        </span>
+
+        <span class="doctor-title">
+          استشاري الجراحة العامة والمناظير
+        </span>
+
+      </div>
+
+    </a>
+
+
+    <ul class="nav-links" id="navLinks">
+
+      <li>
+        <a href="#hero"
+           class="nav-link active">
+          الرئيسية
+        </a>
+      </li>
+
+      <li>
+        <a href="#about"
+           class="nav-link">
+          عن الطبيب
+        </a>
+      </li>
+
+      <li>
+        <a href="#services"
+           class="nav-link">
+          الخدمات والمناظير
+        </a>
+      </li>
+
+      <li>
+        <a href="#clinics"
+           class="nav-link">
+          الفروع والمواعيد
+        </a>
+      </li>
+
+      <li>
+        <a href="#gallery"
+           class="nav-link">
+          معرض الصور
+        </a>
+      </li>
+
+      <li>
+        <a href="#contact"
+           class="nav-link">
+          تواصل معنا
+        </a>
+      </li>
+
+    </ul>
+
+
+    <div class="nav-actions">
+
+      <a href="https://wa.me/201007450402"
+         target="_blank"
+         class="social-icon-nav whatsapp-icon"
+         title="واتساب">
+
+        <i class="fa-brands fa-whatsapp"></i>
+
       </a>
 
-      <button class="menu-toggle" aria-label="فتح القائمة" aria-expanded="false" id="menuToggle">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+
+      <a href="https://www.facebook.com/share/1BpECw1F2f/"
+         target="_blank"
+         class="social-icon-nav facebook-icon"
+         title="فيسبوك">
+
+        <i class="fa-brands fa-facebook-f"></i>
+
+      </a>
+
+
+      <a href="#clinics"
+         class="btn btn-primary nav-btn">
+
+        احجز موعدك
+
+      </a>
+
+
+      <button class="mobile-toggle"
+              id="mobileToggle"
+              aria-label="فتح القائمة">
+
+        <i class="fa-solid fa-bars"></i>
+
       </button>
 
-      <nav class="nav" id="mainNav" aria-label="التنقل الرئيسي">
-        <a href="#home" class="nav-link active">الرئيسية</a>
-        <a href="#about" class="nav-link">عن الطبيب</a>
-        <a href="#services" class="nav-link">الخدمات</a>
-        <a href="#clinics" class="nav-link">العيادات</a>
-        <a href="#gallery" class="nav-link">معرض الصور</a>
-        <a href="#contact" class="btn btn-nav-cta">حجز استشارة</a>
-      </nav>
     </div>
-  </header>
 
-  <main>
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-      <div class="hero-bg-glow glow-1"></div>
-      <div class="hero-bg-glow glow-2"></div>
-      
-      <div class="container hero-grid">
-        <div class="hero-copy reveal">
-          <div class="eyebrow">
-            <span class="pulse-dot"></span>
-            <span>رعاية جراحية متخصصة ومتقدمة</span>
+  </div>
+
+</nav>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<header class="hero"
+        id="hero">
+
+  <div class="container hero-container">
+
+
+    <div class="hero-content">
+
+      <span class="hero-badge">
+
+        <i class="fa-solid fa-award"></i>
+
+        الخبرة والشفافية والرعاية المتكاملة
+
+      </span>
+
+
+      <h1 class="hero-title">
+
+        د. محمد عبد الفتاح المعجار
+
+      </h1>
+
+
+      <p class="hero-subtitle">
+
+        مدرس واستشاري الجراحة العامة وجراحة الغدد الصماء والمناظير
+        - كلية الطب - جامعة المنصورة
+
+      </p>
+
+
+      <p class="hero-description">
+
+        نقدم أحدث أساليب التدخل الجراحي والتدخل عن طريق المناظير
+        بأعلى معايير الجودة والسلامة الطبية لضمان أسرع فترة تعافي
+        وأفضل نتائج لمرضانا.
+
+      </p>
+
+
+      <div class="hero-btns">
+
+        <a href="#clinics"
+           class="btn btn-primary btn-lg">
+
+          <i class="fa-solid fa-calendar-check"></i>
+
+          احجز استشارتك الآن
+
+        </a>
+
+
+        <a href="https://wa.me/201007450402"
+           target="_blank"
+           class="btn btn-outline btn-lg">
+
+          <i class="fa-brands fa-whatsapp"></i>
+
+          تواصل واتساب
+
+        </a>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- صورة الدكتور -->
+
+    <div class="hero-doctor-photo">
+
+      <img src="doctor-suit.jpg"
+           alt="د. محمد عبد الفتاح المعجار"
+           width="687"
+           height="1385"
+           fetchpriority="high">
+
+    </div>
+
+
+
+    <!-- بطاقة المواعيد -->
+
+    <div class="hero-card-wrapper">
+
+      <div class="hero-card">
+
+
+        <div class="card-header">
+
+          <i class="fa-solid fa-clock"></i>
+
+          <h3>
+            المواعيد والحجز
+          </h3>
+
+        </div>
+
+
+        <p>
+
+          يرجى اختيار الفرع الأنسب لك والضغط على زر الحجز
+          المباشر عبر الواتساب أو الهاتف.
+
+        </p>
+
+
+        <ul class="quick-clinics">
+
+          <li>
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            المنصورة - مجمع الإصلاح الطبي بتوريل
+
+          </li>
+
+
+          <li>
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            نبروه - شارع البحر
+
+          </li>
+
+
+          <li>
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            تيره
+
+          </li>
+
+        </ul>
+
+
+        <a href="#clinics"
+           class="btn btn-secondary btn-full">
+
+          عرض جميع المواعيد
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</header>
+
+
+
+<!-- =====================================================
+     STATS
+===================================================== -->
+
+<section class="stats-section">
+
+  <div class="container stats-container">
+
+
+    <div class="stat-box">
+
+      <i class="fa-solid fa-hospital-user"></i>
+
+      <div class="stat-number"
+           data-target="5">
+        0
+      </div>
+
+      <div class="stat-label">
+        سنوات خبرة جراحية
+      </div>
+
+    </div>
+
+
+
+    <div class="stat-box">
+
+      <i class="fa-solid fa-hand-holding-medical"></i>
+
+      <div class="stat-number"
+           data-target="3500">
+        0
+      </div>
+
+      <div class="stat-label">
+        عملية جراحية ناجحة
+      </div>
+
+    </div>
+
+
+
+    <div class="stat-box">
+
+      <i class="fa-solid fa-building-circle-check"></i>
+
+      <div class="stat-number"
+           data-target="3">
+        0
+      </div>
+
+      <div class="stat-label">
+        عيادات مجهزة بالكامل
+      </div>
+
+    </div>
+
+
+
+    <div class="stat-box">
+
+      <i class="fa-solid fa-face-smile"></i>
+
+      <div class="stat-number"
+           data-target="100">
+        0
+      </div>
+
+      <div class="stat-label">
+        % رضا المرضى والرعاية
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ABOUT
+===================================================== -->
+
+<section class="about"
+         id="about">
+
+  <div class="container about-container">
+
+
+    <div class="about-image-column">
+
+      <div class="image-frame">
+
+        <img src="doctor-blue.jpg"
+             alt="د. محمد عبد الفتاح المعجار"
+             class="about-img"
+             width="682"
+             height="1395">
+
+
+        <div class="experience-badge">
+
+          <span class="exp-years">
+            +5
+          </span>
+
+          <span class="exp-text">
+            أعوام من التميز الطبي
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="about-text-column">
+
+
+      <span class="section-tag">
+        نبذة عن الطبيب
+      </span>
+
+
+      <h2 class="section-title">
+        د. محمد عبد الفتاح المعجار
+      </h2>
+
+
+      <h3 class="about-subtitle">
+
+        مدرس واستشاري الجراحة العامة وغدد صماء والمناظير
+
+      </h3>
+
+
+      <p class="about-text">
+
+        خبرة أكثر من 5 سنوات متخصص في إجراء أحدث العمليات
+        الجراحية المعقدة وجراحات المناظير المتقدمة.
+        نحرص دائمًا على تطبيق أحدث البروتوكولات الطبية العالمية
+        لتقديم أفضل مستوى تشخيصي وعلاجي متاح لكل مريض.
+
+      </p>
+
+
+
+      <div class="qualifications-list">
+
+
+        <!-- المؤهل الأول -->
+
+        <div class="qual-item">
+
+          <i class="fa-solid fa-graduation-cap"></i>
+
+          <div>
+
+            <h4>
+              مدرس الجراحة العامة
+            </h4>
+
+            <p>
+
+              عضو الهيئة التدريسية والأكاديمية بكلية الطب
+              - جامعة المنصورة.
+
+            </p>
+
           </div>
-          <h1>خبرة جراحية تمنحك <br><span class="highlight">الثقة والأمان.</span></h1>
-          <p class="hero-lead">
-            نقدم أفضل حلول الجراحة العامة وجراحات الغدد الصماء والفتق والمناظير بأحدث التقنيات الطبية المعاصرة ومعايير السلامة العالمية.
+
+        </div>
+
+
+
+        <!-- المؤهل الثاني -->
+
+        <div class="qual-item">
+
+          <i class="fa-solid fa-stethoscope"></i>
+
+          <div>
+
+            <h4>
+              استشاري جراحة الغدد الصماء والمناظير
+            </h4>
+
+            <p>
+
+              متخصص في جراحات الغدة الدرقية،
+              الجار درقية، وعمليات المناظير الدقيقة.
+
+            </p>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     SERVICES
+===================================================== -->
+
+<section class="services"
+         id="services">
+
+  <div class="container">
+
+
+    <div class="section-header center">
+
+      <span class="section-tag">
+        التخصصات والخدمات
+      </span>
+
+      <h2 class="section-title">
+        أحدث الخدمات الجراحية والمناظير
+      </h2>
+
+      <p class="section-desc">
+
+        نوفر تشخيصاً دقيقاً وتدخلات جراحية باستخدام أحدث
+        التقنيات الطبية لضمان سلامة المرضى.
+
+      </p>
+
+    </div>
+
+
+
+    <div class="services-grid">
+
+
+      <div class="service-card">
+
+        <div class="service-icon">
+
+          <i class="fa-solid fa-laptop-medical"></i>
+
+        </div>
+
+        <h3>
+          جراحات المناظير المتقدمة
+        </h3>
+
+        <p>
+
+          استئصال المرارة بالمناظير، الزائدة الدودية،
+          وإصلاح الفتق بالمناظير.
+
+        </p>
+
+      </div>
+
+
+
+      <div class="service-card">
+
+        <div class="service-icon">
+
+          <i class="fa-solid fa-dna"></i>
+
+        </div>
+
+        <h3>
+          جراحة الغدد الصماء
+        </h3>
+
+        <p>
+
+          استئصال أورام الغدة الدرقية والجار درقية
+          والغدد الكظرية بالتقنيات الحديثة.
+
+        </p>
+
+      </div>
+
+
+
+      <div class="service-card">
+
+        <div class="service-icon">
+
+          <i class="fa-solid fa-microscope"></i>
+
+        </div>
+
+        <h3>
+          جراحات الأورام
+        </h3>
+
+        <p>
+
+          استئصال أورام الجهاز الهضمي والثدي والأنسجة
+          الناعمة مع المتابعة.
+
+        </p>
+
+      </div>
+
+
+
+      <div class="service-card">
+
+        <div class="service-icon">
+
+          <i class="fa-solid fa-bandage"></i>
+
+        </div>
+
+        <h3>
+          إصلاح الفتق بأنواعه
+        </h3>
+
+        <p>
+
+          علاج الفتق الإربي والسري والفتق الجراحي
+          باستخدام أحدث التقنيات.
+
+        </p>
+
+      </div>
+
+
+
+      <div class="service-card">
+
+        <div class="service-icon">
+
+          <i class="fa-solid fa-notes-medical"></i>
+
+        </div>
+
+        <h3>
+          جراحات الشرج والمستقيم
+        </h3>
+
+        <p>
+
+          علاج البواسير والشرخ والناسور بالتقنيات
+          الحديثة المناسبة للحالة.
+
+        </p>
+
+      </div>
+
+
+
+      <div class="service-card">
+
+        <div class="service-icon">
+
+          <i class="fa-solid fa-kit-medical"></i>
+
+        </div>
+
+        <h3>
+          الجراحات الطارئة والحرجة
+        </h3>
+
+        <p>
+
+          التعامل السريع مع الحالات الجراحية الطارئة
+          وحالات الإصابات وانسداد الأمعاء.
+
+        </p>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CLINICS
+===================================================== -->
+
+<section class="clinics"
+         id="clinics">
+
+  <div class="container">
+
+
+    <div class="section-header center">
+
+      <span class="section-tag">
+        الفروع والمواعيد
+      </span>
+
+      <h2 class="section-title">
+        فروع العيادة وأوقات العمل
+      </h2>
+
+      <p class="section-desc">
+
+        اختر العيادة الأقرب لك واطلع على مواعيد الحجز
+        والاستشارة.
+
+      </p>
+
+    </div>
+
+
+
+    <div class="clinics-grid">
+
+
+      <!-- المنصورة -->
+
+      <div class="clinic-card highlight">
+
+        <div class="clinic-badge">
+          الفرع الرئيسي
+        </div>
+
+
+        <div class="clinic-header">
+
+          <i class="fa-solid fa-hospital"></i>
+
+          <h3>
+            عيادة المنصورة
+          </h3>
+
+        </div>
+
+
+        <div class="clinic-body">
+
+          <p class="clinic-address">
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            توريل - مجمع الإصلاح الطبي
+
           </p>
 
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#clinics">
-              <span>مواعيد العيادات والحجز</span>
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
-            </a>
-            <a class="btn btn-outline" href="https://wa.me/201007450402" target="_blank" rel="noopener">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
-              <span>تواصل واتساب مباشر</span>
-            </a>
+
+          <div class="clinic-timing">
+
+            <h4>
+
+              <i class="fa-regular fa-clock"></i>
+
+              مواعيد العمل:
+
+            </h4>
+
+            <p>
+              حجز مسبق
+            </p>
+
+            <span class="time-slot">
+              8:30 مساءً - 10:30 مساءً
+            </span>
+
           </div>
 
-          <div class="trust-pills">
-            <div class="trust-pill">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              <span>دقة تشخيصية عالية</span>
-            </div>
-            <div class="trust-pill">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              <span>تقنيات مناظير حديثة</span>
-            </div>
-            <div class="trust-pill">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              <span>متابعة دقيقة بعد العملية</span>
-            </div>
+
+          <div class="clinic-phones">
+
+            <p>
+
+              <i class="fa-solid fa-phone"></i>
+
+              01007450402
+
+            </p>
+
           </div>
+
         </div>
 
-        <div class="hero-visual reveal">
-          <div class="photo-card-wrapper">
-            <div class="photo-frame">
-              <img src="photo_4_2026-09-04_21-22-17.jpg" alt="د. محمد عبد الفتاح المعجار بملابس العمليات" />
-            </div>
-            <div class="glass-card floating-card">
-              <div class="card-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
-              </div>
-              <div>
-                <strong>جراحة عامة ومناظير</strong>
-                <small>أحدث معايير الأمان والجودة</small>
-              </div>
-            </div>
-            <div class="experience-badge">
-              <strong>مدرس واستشاري</strong>
-              <span>الجراحة العامة</span>
-            </div>
-          </div>
+
+        <div class="clinic-footer">
+
+          <button class="btn btn-primary btn-full open-booking"
+                  data-clinic="المنصورة (توريل)">
+
+            <i class="fa-brands fa-whatsapp"></i>
+
+            احجز بالواتساب
+
+          </button>
+
         </div>
+
       </div>
-    </section>
 
-    <!-- Stats Section -->
-    <section class="stats-bar">
-      <div class="container stats-grid">
-        <div class="stat-item">
-          <div class="stat-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-          </div>
-          <div>
-            <h3>خبرة أكاديمية وطبية</h3>
-            <p>مدرس واستشاري الجراحة العامة</p>
-          </div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
-          </div>
-          <div>
-            <h3>جراحة الغدد الصماء</h3>
-            <p>الدرقية والغدد المختلفة بدقة عالية</p>
-          </div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          </div>
-          <div>
-            <h3>جراحات المناظير</h3>
-            <p>تقنيات متقدمة وسريعة التعافي</p>
-          </div>
-        </div>
-        <div class="stat-item">
-          <div class="stat-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          </div>
-          <div>
-            <h3>٣ مقرات للعيادة</h3>
-            <p>المنصورة · نبروه · تيره</p>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- About Section -->
-    <section class="section about" id="about">
-      <div class="container split-grid">
-        <div class="about-visual reveal">
-          <div class="about-image-card">
-            <img src="photo_5_2026-09-04_21-22-17.jpg" alt="د. محمد عبد الفتاح المعجار في عيادته" />
-            <div class="image-overlay-badge">
-              <span>د. محمد عبد الفتاح المعجار</span>
-            </div>
-          </div>
+
+      <!-- نبروه -->
+
+      <div class="clinic-card">
+
+
+        <div class="clinic-header">
+
+          <i class="fa-solid fa-clinic-medical"></i>
+
+          <h3>
+            عيادة نبروه
+          </h3>
+
         </div>
-        <div class="section-copy reveal">
-          <div class="eyebrow">
-            <span class="bar-line"></span>
-            <span>نبذة عن الطبيب</span>
-          </div>
-          <h2>دقة جراحية متناهية..<br><span class="highlight">ورعاية شاملة تهتم بالمريض.</span></h2>
-          <p>
-            د. محمد عبد الفتاح المعجار — مدرس واستشاري الجراحة العامة وجراحة الغدد الصماء والمناظير. يجمع بين الخبرة الأكاديمية والعملية لتوفير أعلى مستويات الرعاية الجراحية، بدءاً من التشخيص الدقيق وحتى التماثل التام للشفاء.
+
+
+        <div class="clinic-body">
+
+          <p class="clinic-address">
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            نبروه - شارع البحر - بجوار مركز الشرطه
+
           </p>
-          <div class="feature-cards">
-            <div class="f-card">
-              <div class="f-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              </div>
-              <div>
-                <h4>خطة علاجية فردية لكل حالة</h4>
-                <p>تقييم دقيق وشامل لكافة الفحوصات والتحاليل قبل تحديد الإجراء الجراحي المناسب.</p>
-              </div>
-            </div>
-            <div class="f-card">
-              <div class="f-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-              </div>
-              <div>
-                <h4>تقنيات التدخل الدقيق</h4>
-                <p>استخدام المناظير وأحدث الأساليب وتقليل فترة الإقامة بالمستشفى لسرعة العودة للحياة الطبيعية.</p>
-              </div>
-            </div>
+
+
+          <div class="clinic-timing">
+
+            <h4>
+
+              <i class="fa-regular fa-clock"></i>
+
+              مواعيد العمل:
+
+            </h4>
+
+            <p>
+              السبت - الثلاثاء - الأربعاء
+            </p>
+
+            <span class="time-slot">
+              8:00 مساءً - 10:30 مساءً
+            </span>
+
           </div>
+
+
+          <div class="clinic-phones">
+
+            <p>
+
+              <i class="fa-solid fa-phone"></i>
+
+              01007450402
+
+            </p>
+
+
+            <p>
+
+              <i class="fa-solid fa-phone"></i>
+
+              0502400585 (أرضي)
+
+            </p>
+
+          </div>
+
         </div>
+
+
+        <div class="clinic-footer">
+
+          <button class="btn btn-primary btn-full open-booking"
+                  data-clinic="نبروه">
+
+            <i class="fa-brands fa-whatsapp"></i>
+
+            احجز بالواتساب
+
+          </button>
+
+        </div>
+
       </div>
-    </section>
 
-    <!-- Services Section -->
-    <section class="section services" id="services">
-      <div class="container">
-        <div class="section-heading text-center reveal">
-          <div class="eyebrow center">
-            <span class="bar-line"></span>
-            <span>التخصصات والخدمات الجراحية</span>
-            <span class="bar-line"></span>
+
+
+      <!-- تيره -->
+
+      <div class="clinic-card">
+
+
+        <div class="clinic-header">
+
+          <i class="fa-solid fa-house-medical"></i>
+
+          <h3>
+            عيادة تيره
+          </h3>
+
+        </div>
+
+
+        <div class="clinic-body">
+
+          <p class="clinic-address">
+
+            <i class="fa-solid fa-location-dot"></i>
+
+            تيره
+
+          </p>
+
+
+          <div class="clinic-timing">
+
+            <h4>
+
+              <i class="fa-regular fa-clock"></i>
+
+              مواعيد العمل:
+
+            </h4>
+
+            <p>
+              الأربعاء فقط
+            </p>
+
+            <span class="time-slot">
+              5:00 عصراً - 7:00 مساءً
+            </span>
+
           </div>
-          <h2>رعاية جراحية متكاملة <span class="highlight">بأحدث التقنيات</span></h2>
-          <p>نعمل بأعلى المعايير الطبية لتقديم حلول جراحية آمنة وفعالة.</p>
+
+
+          <div class="clinic-phones">
+
+            <p>
+
+              <i class="fa-solid fa-phone"></i>
+
+              01007450402
+
+            </p>
+
+          </div>
+
         </div>
 
-        <div class="service-grid">
-          <article class="service-card reveal">
-            <div class="card-head">
-              <span class="ser-number">٠١</span>
-              <div class="ser-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-              </div>
-            </div>
-            <h3>الجراحة العامة</h3>
-            <p>تشخيص وعلاج العمليات الجراحية العامة وجراحات الجهاز الهضمي بأعلى معايير الدقة والكفاءة.</p>
-            <a href="#contact" class="card-link">احجز استشارة الان ←</a>
-          </article>
 
-          <article class="service-card featured reveal">
-            <div class="card-head">
-              <span class="ser-number">٠٢</span>
-              <div class="ser-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-              </div>
-            </div>
-            <h3>جراحة الغدد الصماء</h3>
-            <p>استئصال وعلاج أمراض الغدة الدرقية والجارات درقية والغدد الصماء بأحدث الطرق الآمنة.</p>
-            <a href="#contact" class="card-link">احجز استشارة الان ←</a>
-          </article>
+        <div class="clinic-footer">
 
-          <article class="service-card reveal">
-            <div class="card-head">
-              <span class="ser-number">٠٣</span>
-              <div class="ser-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/></svg>
-              </div>
-            </div>
-            <h3>جراحات الفتق والمناظير</h3>
-            <p>إصلاح كافة أنواع الفتق (الإربي، الجداري، السري) بالمنظار واستخدام أحدث الشبكات الجراحية.</p>
-            <a href="#contact" class="card-link">احجز استشارة الان ←</a>
-          </article>
+          <button class="btn btn-primary btn-full open-booking"
+                  data-clinic="تيره">
 
-          <article class="service-card reveal">
-            <div class="card-head">
-              <span class="ser-number">٠٤</span>
-              <div class="ser-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-              </div>
-            </div>
-            <h3>الاستشارات والمتابعة</h3>
-            <p>استشارات جراحية دقيقة، تقييم الفحوصات الطبية والمتابعة المستمرة قبل وبعد العمليات.</p>
-            <a href="#contact" class="card-link">احجز استشارة الان ←</a>
-          </article>
+            <i class="fa-brands fa-whatsapp"></i>
+
+            احجز بالواتساب
+
+          </button>
+
         </div>
+
       </div>
-    </section>
 
-    <!-- Clinics Section -->
-    <section class="section clinics" id="clinics">
-      <div class="container">
-        <div class="section-heading text-center reveal">
-          <div class="eyebrow center">
-            <span class="bar-line"></span>
-            <span>مواقع وعيادات الطبيب</span>
-            <span class="bar-line"></span>
-          </div>
-          <h2>فروع العيادة <span class="highlight">ومواعيد الحجز</span></h2>
-          <p>اختر المقر الأنسب لك وتواصل معنا لحجز الموعد المسبق.</p>
-        </div>
 
-        <div class="clinic-grid">
-          <!-- عيادة نبروه -->
-          <article class="clinic-card reveal">
-            <div class="clinic-header">
-              <div class="pin-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              </div>
-              <h3>فرع نبروه</h3>
-            </div>
-            <div class="clinic-details">
-              <div class="detail-row">
-                <span class="label">الأيام:</span>
-                <span class="val">السبت · الثلاثاء · الأربعاء</span>
-              </div>
-              <div class="detail-row">
-                <span class="label">الموعد:</span>
-                <span class="val highlight-time">8:00 مساءً – 10:30 مساءً</span>
-              </div>
-              <div class="detail-row">
-                <span class="label">العنوان:</span>
-                <span class="val">عيادة نبروه</span>
-              </div>
-            </div>
-            <button class="btn btn-clinic schedule-btn" data-location="نبروه">
-              <span>حجز موعد في نبروه</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </button>
-          </article>
-
-          <!-- عيادة المنصورة -->
-          <article class="clinic-card featured reveal">
-            <div class="popular-tag">الفرع الرئيسي</div>
-            <div class="clinic-header">
-              <div class="pin-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              </div>
-              <h3>فرع المنصورة</h3>
-            </div>
-            <div class="clinic-details">
-              <div class="detail-row">
-                <span class="label">الأيام:</span>
-                <span class="val">بأسبقية الحجز المسبق</span>
-              </div>
-              <div class="detail-row">
-                <span class="label">الموعد:</span>
-                <span class="val highlight-time">8:30 مساءً – 10:30 مساءً</span>
-              </div>
-              <div class="detail-row">
-                <span class="label">العنوان:</span>
-                <span class="val">مجمع الإصلاح الطبي بتوريل</span>
-              </div>
-            </div>
-            <button class="btn btn-clinic featured-btn schedule-btn" data-location="المنصورة - مجمع الإصلاح الطبي">
-              <span>حجز موعد في المنصورة</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </button>
-          </article>
-
-          <!-- عيادة تيرة -->
-          <article class="clinic-card reveal">
-            <div class="clinic-header">
-              <div class="pin-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              </div>
-              <h3>فرع تيره</h3>
-            </div>
-            <div class="clinic-details">
-              <div class="detail-row">
-                <span class="label">الأيام:</span>
-                <span class="val">الأربعاء</span>
-              </div>
-              <div class="detail-row">
-                <span class="label">الموعد:</span>
-                <span class="val highlight-time">5:00 عصراً – 7:00 مساءً</span>
-              </div>
-              <div class="detail-row">
-                <span class="label">العنوان:</span>
-                <span class="val">عيادة تيره</span>
-              </div>
-            </div>
-            <button class="btn btn-clinic schedule-btn" data-location="تيرة">
-              <span>حجز موعد في تيره</span>
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </button>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Gallery Section (المعدل بأسماء الكلاسات المخصصة لكل صورة) -->
-    <section class="section gallery" id="gallery">
-      <div class="container">
-        <div class="section-heading text-center reveal">
-          <div class="eyebrow center">
-            <span class="bar-line"></span>
-            <span>معرض الصور والعيادة</span>
-            <span class="bar-line"></span>
-          </div>
-          <h2>معرض الصور <span class="highlight">والنشاط الطبي</span></h2>
-        </div>
-
-        <div class="gallery-grid">
-          <!-- 1. صورة الدكتور (مكتف إيديه) - photo-1 -->
-          <div class="gallery-item photo-1 reveal" data-full="photo_1_2026-09-04_21-22-17.jpg">
-            <img src="photo_1_2026-09-04_21-22-17.jpg" alt="تجهيزات ورعاية جراحية" />
-            <div class="gallery-overlay">
-              <span>تجهيزات ورعاية جراحية</span>
-            </div>
-          </div>
-
-          <!-- 2. بنر المواعيد والجدول - photo-banner -->
-          <div class="gallery-item photo-banner reveal" data-full="photo_7_2026-09-04_21-21-39.jpg">
-            <img src="photo_7_2026-09-04_21-21-39.jpg" alt="جدول المواعيد والعيادات" />
-            <div class="gallery-overlay">
-              <span>بنر مواعيد العيادات</span>
-            </div>
-          </div>
-
-          <!-- 3. صورة الدكتور (بالبدلة) - photo-3 -->
-          <div class="gallery-item photo-3 reveal" data-full="photo_3_2026-09-04_21-21-39.jpg">
-            <img src="photo_3_2026-09-04_21-21-39.jpg" alt="د. محمد عبد الفتاح المعجار" />
-            <div class="gallery-overlay">
-              <span>د. محمد عبد الفتاح المعجار</span>
-            </div>
-          </div>
-
-          <!-- 4. صورة الدكتور (السكراب البني) - photo-4 -->
-          <div class="gallery-item photo-4 reveal" data-full="photo_2_2026-09-04_21-22-17.jpg">
-            <img src="photo_2_2026-09-04_21-22-17.jpg" alt="فريق الجراحة والتجهيزات" />
-            <div class="gallery-overlay">
-              <span>فريق الجراحة والتجهيزات</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact CTA Section -->
-    <section class="cta-section" id="contact">
-      <div class="container cta-inner reveal">
-        <div class="cta-text">
-          <div class="eyebrow light">
-            <span class="bar-line"></span>
-            <span>تواصل مباشر وتأكيد الحجز</span>
-          </div>
-          <h2>هل لديك استفسار جراحي؟<br><span class="highlight-light">احجز استشارتك الآن بسهولة.</span></h2>
-          <p>يمكنك التواصل المباشر مع العيادة عن طريق الهاتف أو الواتساب أو الفيسبوك.</p>
-        </div>
-        
-        <div class="cta-buttons">
-          <a class="btn-social btn-wa" id="whatsappLink" href="https://wa.me/201007450402" target="_blank" rel="noopener">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
-            <span>واتساب العيادة</span>
-          </a>
-          <a class="btn-social btn-call" href="tel:01007450402">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            <span>01007450402</span>
-          </a>
-          <a class="btn-social btn-fb" id="facebookLink" href="https://www.facebook.com/share/1BpECw1F2f/" target="_blank" rel="noopener">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-            <span>فيسبوك</span>
-          </a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <img src="photo_6_2026-09-04_21-22-17.jpg" alt="شعار د. محمد المعجار" />
-        <div>
-          <strong>د. محمد عبد الفتاح المعجار</strong>
-          <span>مدرس واستشاري الجراحة العامة وغدد صماء ومناظير</span>
-        </div>
-      </div>
-      <p class="copyright">جميع الحقوق محفوظة © <span id="year"></span>تطوير وبرمجة: محمد أيمن • 01023001692</p>
     </div>
-  </footer>
 
-  <!-- Modal Contact -->
-  <div class="modal" id="contactModal" aria-hidden="true">
-    <div class="modal-backdrop"></div>
-    <div class="modal-box">
-      <button class="modal-close" aria-label="إغلاق">&times;</button>
-      <div class="eyebrow">
-        <span class="pulse-dot"></span>
-        <span>حجز موعد عيادة</span>
+  </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     GALLERY
+===================================================== -->
+
+<section class="gallery"
+         id="gallery">
+
+  <div class="container">
+
+
+    <div class="section-header center">
+
+      <span class="section-tag">
+        المعرض والعيادات
+      </span>
+
+      <h2 class="section-title">
+        صور من العيادة والعمليات
+      </h2>
+
+      <p class="section-desc">
+
+        جولة مصورة داخل العيادات وتجهيزات التعقيم
+        والأجهزة الطبية الحديثة.
+
+      </p>
+
+    </div>
+
+
+
+    <div class="gallery-grid">
+
+
+      <!-- الصورة الأولى -->
+
+      <div class="gallery-item">
+
+        <img src="clinic-poster.jpg"
+             alt="مواعيد العيادة"
+             loading="lazy">
+
+        <div class="gallery-caption">
+          مواعيد العيادة
+        </div>
+
+        <div class="gallery-overlay">
+
+          <i class="fa-solid fa-magnifying-glass-plus"></i>
+
+        </div>
+
       </div>
-      <h3 id="modalTitle">تأكيد الموعد عبر الواتساب</h3>
-      <p id="modalText">سيتم توجيهك لمحادثة العيادة على الواتساب مع كتابة الفرع المحدد تلقائياً.</p>
-      <a class="btn btn-primary modal-wa-btn" id="modalWhatsapp" href="#" target="_blank" rel="noopener">
-        <span>الانتقال إلى الواتساب الآن</span>
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+
+
+
+      <!-- الصورة الثانية -->
+
+      <div class="gallery-item">
+
+        <img src="doctor-hero.jpg"
+             alt="د. محمد عبد الفتاح المعجار داخل غرفة العمليات"
+             loading="lazy">
+
+        <div class="gallery-caption">
+          داخل غرفة العمليات
+        </div>
+
+        <div class="gallery-overlay">
+
+          <i class="fa-solid fa-magnifying-glass-plus"></i>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- الصورة الثالثة -->
+
+      <div class="gallery-item">
+
+        <img src="doctor-scrubs.jpg"
+             alt="د. محمد عبد الفتاح المعجار بالزي الجراحي"
+             loading="lazy">
+
+        <div class="gallery-caption">
+          بالزي الجراحي
+        </div>
+
+        <div class="gallery-overlay">
+
+          <i class="fa-solid fa-magnifying-glass-plus"></i>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     CONTACT
+===================================================== -->
+
+<section class="contact"
+         id="contact">
+
+  <div class="container">
+
+    <div class="contact-wrapper">
+
+
+      <div class="contact-info">
+
+        <span class="section-tag">
+          تواصل معنا
+        </span>
+
+
+        <h2 class="section-title">
+
+          نحن هنا لرعايتك والإجابة عن استفساراتك
+
+        </h2>
+
+
+        <p>
+
+          يمكنك التواصل المباشر مع فريق العيادة للحجز
+          والاستفسار عن العمليات أو المواعيد.
+
+        </p>
+
+
+        <div class="contact-details">
+
+
+          <div class="c-detail">
+
+            <i class="fa-brands fa-whatsapp"></i>
+
+            <div>
+
+              <h5>
+                واتساب / الموبايل
+              </h5>
+
+              <p dir="ltr">
+
+                <a href="https://wa.me/201007450402"
+                   target="_blank">
+
+                  01007450402
+
+                </a>
+
+              </p>
+
+            </div>
+
+          </div>
+
+
+
+          <div class="c-detail">
+
+            <i class="fa-solid fa-phone"></i>
+
+            <div>
+
+              <h5>
+                التليفون الأرضي 
+              </h5>
+
+              <p dir="ltr">
+
+                <a href="tel:0502400585">
+                  050 2400585
+                </a>
+
+              </p>
+
+            </div>
+
+          </div>
+
+
+
+          <div class="c-detail">
+
+            <i class="fa-brands fa-facebook-f"></i>
+
+            <div>
+
+              <h5>
+                صفحة الفيسبوك الرسمية
+              </h5>
+
+              <p>
+
+                <a href="https://www.facebook.com/share/1BpECw1F2f/"
+                   target="_blank">
+
+                  تابعنا على فيسبوك
+
+                </a>
+
+              </p>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+
+      <!-- FORM -->
+
+      <div class="contact-form-card">
+
+        <h3>
+          أرسل استفسارك مباشرة
+        </h3>
+
+
+        <form id="contactForm">
+
+
+          <div class="form-group">
+
+            <label for="name">
+              الاسم بالكامل
+            </label>
+
+            <input type="text"
+                   id="name"
+                   required
+                   placeholder="أدخل اسمك هنا">
+
+          </div>
+
+
+
+          <div class="form-group">
+
+            <label for="phone">
+              رقم الهاتف
+            </label>
+
+            <input type="tel"
+                   id="phone"
+                   required
+                   placeholder="01xxxxxxxxx">
+
+          </div>
+
+
+
+          <div class="form-group">
+
+            <label for="clinicSelect">
+              الفرع المفضل
+            </label>
+
+            <select id="clinicSelect">
+
+              <option value="المنصورة">
+                فرع المنصورة
+              </option>
+
+              <option value="نبروه">
+                فرع نبروه
+              </option>
+
+              <option value="تيره">
+                فرع تيره
+              </option>
+
+            </select>
+
+          </div>
+
+
+
+          <div class="form-group">
+
+            <label for="message">
+              الرسالة أو الاستفسار
+            </label>
+
+            <textarea id="message"
+                      rows="4"
+                      placeholder="اكتب تفاصيل استفسارك هنا..."></textarea>
+
+          </div>
+
+
+
+          <button type="submit"
+                  class="btn btn-primary btn-full">
+
+            <i class="fa-brands fa-whatsapp"></i>
+
+            إرسال عبر الواتساب
+
+          </button>
+
+
+        </form>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer class="footer">
+
+  <div class="container footer-container">
+
+
+    <div class="footer-brand">
+
+      <h3>
+        د. محمد عبد الفتاح المعجار
+      </h3>
+
+      <p>
+        مدرس واستشاري الجراحة العامة والغدد الصماء والمناظير.
+      </p>
+
+    </div>
+
+
+
+    <div class="social-links-footer">
+
+      <a href="https://wa.me/201007450402"
+         target="_blank"
+         aria-label="واتساب">
+
+        <i class="fa-brands fa-whatsapp"></i>
+
       </a>
+
+
+      <a href="https://www.facebook.com/share/1BpECw1F2f/"
+         target="_blank"
+         aria-label="فيسبوك">
+
+        <i class="fa-brands fa-facebook-f"></i>
+
+      </a>
+
     </div>
+
+
+
+    <div class="footer-links">
+
+      <a href="#hero">
+        الرئيسية
+      </a>
+
+      <a href="#about">
+        عن الطبيب
+      </a>
+
+      <a href="#services">
+        الخدمات والمناظير
+      </a>
+
+      <a href="#clinics">
+        الفروع والمواعيد
+      </a>
+
+      <a href="#gallery">
+        معرض الصور
+      </a>
+
+      <a href="#contact">
+        تواصل معنا
+      </a>
+
+    </div>
+
+
+
+    <div class="footer-bottom">
+
+      <p>
+        جميع الحقوق محفوظة © 2026
+       محمد أيمن / 01023001692
+      </p>
+
+    </div>
+
+
   </div>
 
-  <!-- Lightbox Gallery -->
-  <div class="lightbox" id="lightbox" aria-hidden="true">
-    <button class="lightbox-close" aria-label="إغلاق الصورة">&times;</button>
-    <img id="lightboxImg" src="" alt="" />
-  </div>
+</footer>
 
-  <script src="script.js"></script>
+
+
+<!-- =====================================================
+     LIGHTBOX
+===================================================== -->
+
+<div class="lightbox"
+     id="lightbox">
+
+  <button class="lightbox-close"
+          id="lightboxClose"
+          aria-label="إغلاق">
+
+    &times;
+
+  </button>
+
+
+  <img src=""
+       alt="صورة مكبرة"
+       id="lightboxImg">
+
+</div>
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+
+<script src="script.js"></script>
+
+
 </body>
+
 </html>
